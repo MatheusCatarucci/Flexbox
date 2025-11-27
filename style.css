@@ -1,7 +1,7 @@
 * {
     padding: 0;
-    border: 0;
     margin: 0;
+    border: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -9,44 +9,107 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 120px;
+    background-color: #fff;
 }
 
 header {
     display: flex;
     width: 1000px;
     justify-content: space-between;
-    height: 80px;    
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-header > button {
+header>button {
     height: 50px;
     background-color: black;
     color: white;
-    padding: 2px 10px;
-    border-radius: 6px;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 main {
     display: flex;
     width: 1000px;
-    gap: 20px;
+    gap: 40px;
 }
 
+/* COLUNA 1 */
 .meio-1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 320px;
 }
 
 .meio-1 img {
     width: 100%;
+    border-radius: 10px;
 }
 
+.meio-1 h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+/* COLUNA 2 */
 .meio-2 {
+    display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 320px;
 }
 
 .meio-2 img {
     width: 100%;
+    border-radius: 10px;
 }
+
+.meio-2 h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* COLUNA 3 */
+.meio-3 {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.sub img {
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.sub-imagem small {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.sub-imagem h3 {
+    font-size: 12px;
+    line-height: 1.2;
+    width: 180px;
+    margin-top: 4px;
+}
+
+.linha {
+    height: 2px;
+    width: 100%;
+    background-color: #dcdcdc;
+    margin: 17px 0;
+}
+
